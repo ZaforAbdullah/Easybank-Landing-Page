@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+:root {
+    --left-padding-global: 75px;
+}
+
+button {
+    height: 35px;
+    width: 200px;
+    background-image: linear-gradient(to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+    border-radius: 20px;
+    outline: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.logo {
+    padding-left: var(--left-padding-global);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding-right: 50px;
+}
+
+.nav-item a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: hsl(233, 8%, 62%);
+}
+
+.firstbutton {
+    margin-right: 150px;
+}
+
+.icon-hamburger, .bg-intro-mobile {
+    display: none;
+}
+
+.firstdiv {
+    position: relative;
+    display: flex;
+    height: 680px;
+    background: hsl(0, 0%, 98%);
+    padding-left: var(--left-padding-global);
+    overflow: hidden;
+}
+
+.firstdiv div h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+    letter-spacing: 1.5px;
+    padding-top: 150px;
+}
+
+.firstdiv div p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: hsl(233, 8%, 62%);
+    margin-top: 30px;
+}
+
+.secondbutton {
+    margin-top: 30px;
+}
+
+.bg-intro-desktop {
+    position: absolute;
+    object-fit: cover;
+    object-position: 120px -280px;
+    overflow-x: hidden;
+    /*object-position: x-axis(Horizaontal) y-axis(Vertical)*/ 
+}
+
+.image-mockups {
+    position: relative;
+    left: 130px;
+    object-fit: cover;
+    object-position: 115px -125px;
+    overflow: visible;
+}
+
+.secondiv {
+    background: hsl(220, 16%, 96%);
+    height: 580px;
+    padding-left: var(--left-padding-global);
+}
+
+.secondiv div h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+    letter-spacing: 1.5px;
+    padding-top: 80px;
+}
+
+.secondiv div p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: hsl(233, 8%, 62%);
+    margin-top: 30px;
+}
+
+.secondivcontainer {
+    padding-right: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 15px;
+}
+
+.secondivcontainer div img {
+    padding-top: 50px;
+}
+
+.secondivcontainer div h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+    letter-spacing: 1.5px;
+    padding-top: 30px;
+}
+
+.thridiv {
+    height: 680px;
+    background: hsl(0, 0%, 98%);
+    padding-left: var(--left-padding-global);
+}
+
+.thridiv h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+    letter-spacing: 1.5px;
+    padding-top: 80px;
+
+}
+
+.thirdivcontainer {
+    padding-right: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 15px;
+    padding-top: 50px;
+}
+
+.thirdivcontainer div {
+    width: 265px;
+    height: 420px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+.thirdivcontainer div img {
+    border-radius: 10px;
+    width: 265px;
+    height: 210px;
+    padding-bottom: 15px;
+}
+
+.thirdivcontainer div small {
+    padding-left: 15px;
+    font-size: .8rem;
+    font-weight: 300;
+    color: hsl(233, 8%, 62%); 
+}
+
+.thirdivcontainer div h2 {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: hsl(233, 8%, 62%);
+}
+
+.thirdivcontainer div p {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    text-align: justify;
+    font-size: .9rem;
+    font-weight: 300;
+    color: hsl(233, 8%, 62%);
+}
+
+.fourthidiv {
+    display: grid;
+    background-color: hsl(233, 26%, 24%);
+    height: 200px;
+    color: hsl(0, 0%, 100%);
+    padding-left: var(--left-padding-global);
+    padding-right: 100px;
+    padding-top: 50px;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.fourthidiv div div img{
+    padding-left: 15px;
+}
+
+.footerspace1 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    
+}
+
+.footerspace2 {
+    justify-self: end;
+}
+
+
+@media only screen and (max-width: 375px) {
+    .icon-hamburger, .bg-intro-mobile  {
+        display: block;
+    }
+
+    .icon-hamburger {
+        padding-right: 10px;
+    }
+
+    .logo {
+        padding-left: 20px;
+    }
+
+    .firstbutton, .bg-intro-desktop {
+        display: none;
+    }
+
+    .nav-links {
+        position: absolute;
+        display: block;
+        top: 70px;
+        z-index: 2;
+        width: 305px;
+        margin-left: 40px;
+        margin-right: auto;
+        height: 355px;
+        background-color: hsl(0, 0%, 100%);
+        box-shadow: 0px 5px 10px 5px hsl(229, 6%, 66%);
+        border-radius: 10px;
+    }
+
+    .nav-item {
+        padding-top: 35px;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .firstdiv {
+        position: absolute;
+        flex-direction: column-reverse;
+        height: 800px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .firstdiv div h1 {
+        position: relative;
+        bottom: 150px;
+    }
+
+    .firstdiv div p{
+        position: relative;  
+        bottom: 150px;
+        text-justify: inter-character;
+        letter-spacing: 1px;
+    }
+
+    .secondbutton {
+        position: relative; 
+        bottom: 150px;
+    }
+
+    .bg-intro-mobile {
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+    }
+
+    .image-mockups {
+        z-index: 1;
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 5px;
+        object-position: 0px -130px;
+        /*object-position: x-axis(Horizaontal →) y-axis(Vertical ↑)*/ 
+        width: 365px;
+    }
+
+    .secondiv {
+        margin-top: 800px;
+        height: 1350px;
+        text-align: center;
+        text-justify: inter-word;
+        padding-left: 10px;
+        padding-left: 10px;
+    }
+    
+    .secondiv div h1 {
+        font-size: 2.2rem;
+    }
+    
+    .secondivcontainer {
+        padding-right: 0px;
+        display: flex;
+        flex-direction: column; 
+    }
+    
+    .secondivcontainer div img {
+        padding-top: 40px;
+    }
+    
+    .secondivcontainer div h2 {
+        padding-top: 5px;
+    }
+    
+    .thridiv {
+        height: 2000px;
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .thridiv h1 {
+        padding-top: 50px;
+    }
+    
+    .thirdivcontainer {
+        padding-right: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .thirdivcontainer div {
+        width: 355px;
+        margin-left: 10px;
+        background-color: hsl(0, 0%, 100%);
+        margin-bottom: 20px;
+    }
+    
+    .thirdivcontainer div img {
+        width: 355px;
+        padding-bottom: 15px;
+    }
+    
+    .fourthidiv {
+        display: flex;
+        height: 540px;
+        padding-left: 0px;
+        padding-right: 0px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footerspace0 {
+        padding-top: 20px; 
+    }
+    .footerspace1{
+        padding-top: 15px;
+    }
+    
+    .footerspace2 {
+        padding-top: 25px;
+    }
+    
+  }
+  
